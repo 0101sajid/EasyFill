@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            padding: 50px;
+            padding-top: 30px;
+            background-color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(99, 99, 99, 0.3);
+        }
+
+        input[type=text],
+        input[type=numbers],
+        textarea,
+        select,
+        input[type=date] {
+            width: calc(100% - 30px);
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=numbers]:focus,
+        textarea:focus,
+        select:focus,
+        input[type=date]:focus {
+            background-color: rgb(200, 254, 255);
+            outline: none;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .submitbtn {
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            opacity: 0.9;
+            border-radius: 50px;
+            display: block;
+            width: fit-content;
+            padding: 16px 50px;
+            margin: 15px auto;
+            box-shadow: 0px 4px 20px 0px #49c628a6;
+            background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+            border: none;
+        }
+
+        .submitbtn:hover {
+            opacity: 1;
+        }
+
+        .logo {
+            margin: 0;
+            width: 16%;
+            padding: 0;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+
+        .container2 {
+            background-color: #ffffff;
+            margin: -10px;
+            box-shadow: 0 3px 6px 1px #cbcbcb57;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            z-index: 100;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .date-inputs {
+            display: flex;
+            align-items: center;
+        }
+
+        .date-label {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .file-input {
+            margin-top: 3px;
+        }
+
+        input[type=text].duration-input {
+            display: block;
+        }
+
+        .acknowledgement {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+
+        .acknowledgement input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .acknowledgement label{
+            font-weight: normal;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container2">
+        <div class="logo" id="logo">
+            <img src="/logo.png" alt="sharda university" height="40" width="auto">
+        </div>
+    </div>
+
+    <form action="inter_form.php" method="post">
+
+        <div class="container">
+            <center>
+                <h1 style="margin-top: 10px;">Summer Internship Form</h1>
+            </center>
+            <hr>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Name" required />
+            <label>System ID:</label>
+            <input type="text" name="systemid" placeholder="System ID" required />
+
+            <label>Section:</label>
+            <select>
+                <option>Section</option>
+                <option name="section" value="A">A</option>
+                <option name="section" value="B">B</option>
+                <option name="section" value="C">C</option>
+                <option name="section" value="D">D</option>
+                <option name="section" value="E">E</option>
+                <option name="section" value="F">F</option>
+            </select>
+
+            <label>Group:</label>
+            <select>
+                <option>Group</option>
+                <option name="group" value="G1">G1</option>
+                <option name="group" value="G2">G2</option>
+            </select>
+
+            <label>Company Name:</label>
+            <input type="text" name="companyname" placeholder="Company Name" required />
+
+            <label>Your role in the Company:</label>
+            <input type="text" name="role" placeholder="Your role" required />
+
+            
+            <label class="date-label">Duration (in months):</label>
+            <input type="text" name="duration" placeholder="Duration" class="duration-input" required />
+            
+
+            <div class="date-inputs">
+                <label class="date-label">From:</label>
+                <input type="date" name="start" required>
+                <label class="date-label">To:</label>
+                <input type="date" name="end" required>
+            </div>
+
+            <div class="document-label" style="padding-bottom: 0px;">
+                <label>Offer letter (if any):</label>
+            </div>
+            <div class="file-input">
+                <input type="file" name="file" accept=".pdf" required />
+            </div>
+
+            <div class="acknowledgement">
+                <input type="checkbox"  style="margin-right: 10px;
+                width: 14px; height: 17px; margin-top: 17px;" required>
+                <label  >I hereby declared that the above information is correct. The form may be cancelled if any information herein is found incorrect. </label>
+            </div>
+
+            <button type="acknowledge" class="submitbtn">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
+
+
+
+
+ 

@@ -1,0 +1,158 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:  #ffffff; 
+  margin: 0px; 
+}   
+.container {  
+width: 36%;
+height: 80%;
+margin:auto;
+padding: 0px;
+box-shadow: 0px 4px 20px 0px #c1c1c1a6;
+	/* background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%); */
+}   
+
+ div {        
+      padding:0px
+ }   
+hr {  
+  border: 1px solid #c1c1c1a6;  
+  margin-bottom: 25px;  
+  margin-top: 0px;
+}   
+
+.logo{
+    margin: 0px;
+  width: 16%;
+  padding: 0px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.container2{
+  margin: -10px;
+  box-shadow: 0 3px 6px 1px #cbcbcb57;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.submitbtn {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;    
+  text-align: center;
+  opacity: 0.9;  
+  border-radius: 50px;
+  display: inline-block; 
+  width: 180px;
+  height: 40px;
+  padding: 16px;
+  padding-bottom: 25px;
+  /* margin:15px;
+  margin-top: 15%; */
+  margin: 15px;
+  box-shadow: 0px 4px 20px 0px #49c628a6;
+	background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+  border: none;
+}  
+.submitbtn:hover {  
+   opacity: calc(120);  
+} 
+ .SubContainer{
+ width:100%;
+ height:20px;
+display: grid;
+/* justify-content: space-between; */
+align-items: center;
+margin:auto;
+margin-left: 25%;
+margin-top: 10%;
+ }
+ .anch{
+color: white;
+text-decoration: none;
+ }
+
+</style>
+
+
+</head>  
+<body style="overflow-x: hidden;">  
+  
+  <div class="container2">
+    <div class="logo" >
+        <img src="/logo.png" alt="sharda university"  height="40" width="auto" >
+    </div>
+    
+  </div>
+  </div>
+    <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
+ 
+<!--  
+<script>
+  // Add an event listener to the button
+  document.getElementById("Button1").addEventListener("click", function() {
+    // Navigate to the new web page
+    window.location.href = "Stu_undertaking.html";
+  });
+</script>
+
+<script>
+  // Add an event listener to the button
+  document.getElementById("Button2").addEventListener("click", function() {
+    // Navigate to the new web page
+    window.location.href = "Stu_FI_form.html";
+  });
+</script>
+
+<script>
+  // Add an event listener to the button
+  document.getElementById("Button3").addEventListener("click", function() {
+    // Navigate to the new web page
+    window.location.href = "Stu_inter_form.html";
+  });
+</script>
+
+<script>
+  // Add an event listener to the button
+  document.getElementById("Button4").addEventListener("click", function() {
+    // Navigate to the new web page
+    window.location.href = "Stu_medical.html";
+  });
+</script> -->
+<form>
+  <div class="container">
+      <center><h1>Select Form To Fill</h1></center>
+      <hr>
+      <div class="SubContainer">
+       
+      <button   class="submitbtn" ><a class="anch" href="Stu_undertaking.html">Undertaking</a></button> 
+      <button class="submitbtn"><a class="anch" href="Stu_FI_form.html">FI</button>
+      <button class="submitbtn"><a class="anch" href="Stu_inter_form.html">Internship</a></button>
+      <button class="submitbtn"><a class="anch" href="Stu_medical.html">Medical</a></button>
+
+      </div>
+      
+  </div>
+</form>
+
+<!-- <script>
+  // Add click event listener to all buttons with the class "submitbtn"
+  const buttons = document.querySelectorAll('.submitbtn');
+  buttons.forEach(button => {
+      button.addEventListener('click', function () {
+          // Get the URL from the data-url attribute
+          const url = this.getAttribute('data-url');
+          // Navigate to the new web page
+          window.location.href = url;
+      });
+  });
+</script> -->
+
+</body>  
+</html> 

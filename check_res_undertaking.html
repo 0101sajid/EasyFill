@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            padding: 30px;
+            padding-top: 30px;
+            background-color: #ffffff;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(99, 99, 99, 0.3);
+            margin-top: 10px;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea,
+        select {
+            width: calc(100% - 35px);
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus,
+        select:focus,
+        textarea:focus {
+            background-color: rgb(200, 254, 255);
+            outline: none;
+      }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .submitbtn {
+            color: #ffffff;
+            cursor: pointer;
+            text-align: center;
+            opacity: 0.9;
+            border-radius: 50px;
+            display: block;
+            width: fit-content;
+            padding: 16px 50px;
+            margin: 15px auto;
+            box-shadow: 0px 4px 20px 0px #49c628a6;
+            background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+            border: none;
+        }
+
+        .submitbtn:hover {
+            opacity: 1;
+        }
+
+        .logo {
+            margin: 0;
+            width: 16%;
+            padding: 0;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+
+        .container2 {
+            background-color: #ffffff;
+            margin: -10px;
+            box-shadow: 0 3px 6px 1px #cbcbcb57;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            z-index: 100;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="logo" id="logo">
+            <img src="/logo.png" alt="sharda university" height="40" width="auto">
+        </div>
+    </div>
+
+    <form>
+        <div class="container">
+            <center>
+                <h1 style="margin-top: 10px;">Check Responses - Forms</h1>
+            </center>
+            <hr>
+            <div>
+                <label>Section:</label>
+                <select>
+                    <option value="Section">Section</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Group:</label>
+                <select>
+                    <option value="Group">Group</option>
+                    <option value="G1">G1</option>
+                    <option value="G2">G2</option>
+                </select>
+            </div>
+
+            <label>Form:</label>
+            <select>
+                <option value="Undertaking">Undertaking</option>
+                <option value="FI">FI</option>
+                <option value="Internship">Internship</option>
+                <option value="Medical">Medical</option>
+            </select>
+
+            <button type="button" class="submitbtn">Search</button>
+
+            
+                <h3>Search By System ID:</h3>
+            
+
+            <div>
+                <label>System ID:</label>
+                <input type="text" name="System ID" placeholder="System ID" size="15" required />
+            </div>
+
+            <label>Form:</label>
+            <select>
+                <option value="All">All</option>
+                <option value="Undertaking">Undertaking</option>
+                <option value="FI">FI</option>
+                <option value="Internship">Internship</option>
+                <option value="Medical">Medical</option>
+            </select>
+
+            <button type="button" class="submitbtn">Search</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
